@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+       display: flex;
+       height: 40px;
+       width: 100%;
+}
+
+.line{
+    height: 0.6px;
+    width: 100%;
+    background-color:#e1e1e9;
+    margin-top: 20px;
+}
+
+.container{
+    background-color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 3px;
+    margin: auto;
+    margin-top: 10px;
+    width:778px;
+    height: 513px;
+}
+
