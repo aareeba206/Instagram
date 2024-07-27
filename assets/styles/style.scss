@@ -1,0 +1,177 @@
+$primary-color: lightgrey;
+@import 'mediaquery';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.width-container{
+    width: 80%;
+    margin: 0 auto;
+ }
+
+.top-menu{
+    border-bottom: 0.6px solid #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height:62px ;
+    background-color: #fff;
+}
+
+.inner-top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+     .logo{
+        img{
+            height: 50px;     
+        }
+    }
+}
+.auth-section{
+    button{
+        padding: 4px 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 80px;
+    }
+
+    .log-in btn{
+        background-color: skyblue ;
+        color: white;
+    }
+    .sign-up btn{
+        background-color: #ccc;
+        color: skyblue;
+    }
+}
+.profile{
+    display: flex;
+    .profile-img{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inner-img{
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+        }
+    }
+    .profile-info{
+        width: 60%;
+        background-color: white;
+
+        button{
+            width: 80px;
+            height: 25px;
+            border-radius: 8px;
+            border: none;
+ }
+
+        .follow-btn{
+            background-color: $primary-color;
+            color: black;
+        }
+
+        .Message-btn{
+            background-color:$primary-color;
+            color: black;
+        }
+
+        h3{
+            color: gray;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: small;
+        }
+
+        h4{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+
+        a{
+            
+        }
+
+        .part1{
+            display: inline-flex;
+            
+        }
+        .part2{
+            display: inline-flex;
+            justify-items: auto;
+
+        }
+} 
+}
+
+section{
+    align-items: center;
+    justify-content: center;
+    margin:0px auto;
+}
+.highlights{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.highlights-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inner-highlights-img{
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+    }
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 3px;
+    row-gap: 3px;
+    background-color:white;
+    width: 90%;
+    margin: auto;
+    height: 700px;
+
+    .pics{
+        position: relative;
+    }
+
+    .pics img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
